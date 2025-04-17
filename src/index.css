@@ -20,6 +20,34 @@
   letter-spacing: 0.05em;
 }
 
+/* Form Styles */
+input, textarea, select {
+  color: #1a1a1a !important;
+  background-color: #ffffff !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #6b7280 !important;
+  opacity: 1;
+}
+
+/* Dark mode styles */
+.dark input, .dark textarea, .dark select {
+  color: #ffffff !important;
+  background-color: #2a2a2a !important;
+}
+
+.dark input::placeholder, .dark textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+/* High contrast styles */
+.high-contrast input, .high-contrast textarea, .high-contrast select {
+  color: var(--text-color) !important;
+  background-color: var(--background-color) !important;
+  border: 2px solid var(--text-color) !important;
+}
+
 /* Accessibility Styles */
 .high-contrast {
   --text-color: #000000;

@@ -338,11 +338,12 @@ function App() {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300"
+                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300 text-gray-900 bg-white"
                 value={formData.name}
                 onChange={(e) => setFormData({...formData, name: e.target.value})}
                 required
                 aria-required="true"
+                style={{ color: '#1a1a1a', backgroundColor: '#ffffff' }}
               />
             </div>
             <div>
@@ -351,11 +352,12 @@ function App() {
                 type="tel"
                 id="phone"
                 name="phone"
-                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300"
+                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300 text-gray-900 bg-white"
                 value={formData.phone}
                 onChange={(e) => setFormData({...formData, phone: e.target.value})}
                 required
                 aria-required="true"
+                style={{ color: '#1a1a1a', backgroundColor: '#ffffff' }}
               />
             </div>
             <div>
@@ -364,11 +366,12 @@ function App() {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300"
+                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300 text-gray-900 bg-white"
                 value={formData.email}
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
                 required
                 aria-required="true"
+                style={{ color: '#1a1a1a', backgroundColor: '#ffffff' }}
               />
             </div>
             <div>
@@ -376,11 +379,12 @@ function App() {
               <select
                 id="projectType"
                 name="projectType"
-                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300"
+                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300 text-gray-900 bg-white"
                 value={formData.projectType}
                 onChange={(e) => setFormData({...formData, projectType: e.target.value})}
                 required
                 aria-required="true"
+                style={{ color: '#1a1a1a', backgroundColor: '#ffffff' }}
               >
                 <option value="">בחר סוג פרויקט</option>
                 <option value="garden">תכנון וביצוע גינה</option>
@@ -396,12 +400,13 @@ function App() {
                 type="text"
                 id="location"
                 name="location"
-                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300"
+                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300 text-gray-900 bg-white"
                 value={formData.location}
                 onChange={(e) => setFormData({...formData, location: e.target.value})}
                 required
                 aria-required="true"
                 placeholder="עיר / שכונה"
+                style={{ color: '#1a1a1a', backgroundColor: '#ffffff' }}
               />
             </div>
             <div>
@@ -410,10 +415,11 @@ function App() {
                 id="message"
                 name="message"
                 rows={4}
-                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300"
+                className="w-full px-6 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300 text-gray-900 bg-white"
                 value={formData.message}
                 onChange={(e) => setFormData({...formData, message: e.target.value})}
                 placeholder="ספר/י לנו קצת על הפרויקט..."
+                style={{ color: '#1a1a1a', backgroundColor: '#ffffff' }}
               ></textarea>
             </div>
             <div className="flex justify-center">
