@@ -1,0 +1,7 @@
+# Allow all robots
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.primo-gan.co.il/sitemap.xml
+Sitemap: https://primo-gan.co.il/sitemap.xml 
