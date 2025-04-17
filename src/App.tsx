@@ -7,12 +7,21 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import AccessibilityToolbar from './components/AccessibilityToolbar';
 
+interface FormData {
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+  projectType: string;
+  location: string;
+}
+
 function App() {
-  const [isMobile, setIsMobile] = useState(false);
-  const [fontSize, setFontSize] = useState(1);
-  const [isHighContrast, setIsHighContrast] = useState(false);
-  const [isDark, setIsDark] = useState(false);
-  const [formData, setFormData] = useState({
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [fontSize, setFontSize] = useState<number>(1);
+  const [isHighContrast, setIsHighContrast] = useState<boolean>(false);
+  const [isDark, setIsDark] = useState<boolean>(false);
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     phone: '',
     email: '',
